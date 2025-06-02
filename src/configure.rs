@@ -11,9 +11,9 @@ use serde::ser::{
 };
 
 #[derive(Debug, PartialEq, Eq, PartialOrd, Ord)]
-pub struct Readable<T: ?Sized>(T);
+pub struct Readable<T: ?Sized>(pub T);
 #[derive(Debug, PartialEq, Eq, PartialOrd, Ord)]
-pub struct Compact<T: ?Sized>(T);
+pub struct Compact<T: ?Sized>(pub T);
 
 /// Trait to determine whether a value is represented in human-readable or
 /// compact form.
