@@ -164,9 +164,9 @@ extern crate alloc;
 
 mod assert;
 mod configure;
-mod de;
-mod error;
-mod ser;
+pub mod de;
+pub mod error;
+pub mod ser;
 mod token;
 
 pub use crate::assert::{
